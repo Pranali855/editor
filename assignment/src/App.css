@@ -1,0 +1,23 @@
+/* Navbar Container */
+.navbar {
+  padding: 20px;
+  background: #eeeeee;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each Link */
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.nav-link:hover {
+  color: #0077ff;
+  text-decoration: underline;
+}
