@@ -1,0 +1,72 @@
+.head {
+  text-align: center;
+  font-size: 2rem;
+  color: #6699ff;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.z-0 {
+  z-index: 0;
+}
+.desc {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+.emoj-box {
+  background:white;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: 1px solid blue;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+.emoji-pic {
+  width: fit-content;
+  border: 1px solid blue;
+  margin: 50px auto;
+  padding: 10px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.color-picker {
+  margin-top: 40px;
+  width: 34%;
+  border: 1px solid blue;
+  margin: 50px auto;
+  padding: 10px 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
