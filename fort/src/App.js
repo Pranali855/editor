@@ -1,6 +1,5 @@
 import "./App.css";
 
-// Navbar Component
 function Navbar() {
   const navbarStyle = {
     backgroundColor: "#34495e",
@@ -16,7 +15,6 @@ function Navbar() {
   );
 }
 
-// Card Component
 function Card({ image, heading, subheading }) {
   return (
     <div className="card">
@@ -31,7 +29,6 @@ function Card({ image, heading, subheading }) {
   );
 }
 
-// Footer Component
 function Footer() {
   const footerStyle = {
     backgroundColor: "#2c3e50",
@@ -47,8 +44,6 @@ function Footer() {
     </div>
   );
 }
-
-// Main App
 function App() {
   return (
     <div className="App">
