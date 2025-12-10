@@ -1,44 +1,41 @@
 import "./Main.css";
 
-// Navbar Component
-function Navbar() {
+function Navbar(props) {
   return (
     <div className="navbar">
       <h1 style={{ color: "white", textAlign: "center" }}>
-        Mountain Ranges of India
+        {props.title}
       </h1>
     </div>
   );
 }
 
-// Card Component
-function Card({ image, heading, subheading }) {
+function Card(props) {
   return (
     <div className="card">
-      <img src={image} alt="range" className="card-image" />
+      <img src={props.image} alt="range" className="card-image" />
       <div className="container">
-        <h3 style={{ textAlign: "center" }}><b>{heading}</b></h3>
-        <p>{subheading}</p>
+        <h3 style={{ textAlign: "center" }}>
+          <b>{props.heading}</b>
+        </h3>
+        <p>{props.subheading}</p>
       </div>
     </div>
   );
 }
 
-// Footer Component
-function Footer() {
+function Footer(props) {
   return (
     <div className="footer">
-      <p>© 2024 Mountain Ranges of India. All rights reserved.</p>
+      <p>{props.text}</p>
     </div>
   );
 }
 
-// Main App Component
 function App() {
   return (
     <div className="App">
-
-      <Navbar />
+      <Navbar title="Mountain Ranges of India" />
 
       <div className="card-container">
         <Card
@@ -60,10 +57,9 @@ function App() {
         />
       </div>
 
-      <Footer />
-
+      <Footer text="© 2024 Mountain Ranges of India." />
     </div>
   );
 }
 
-export default Main;
+export default App;
