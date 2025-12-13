@@ -5,11 +5,10 @@ import ColorButton from "./ColorButton/ColorButton";
 function Home() {
   const [emoji, setEmoji] = useState("😁");
   const [bgColor, setBgcolor] = useState("#eef3ff");
+  const [slidervalue, setSlidervalue] = useState(50);
 
   return (
     <div className="min-h-screen w-full bg-[#0f172a] relative">
-
-      {/* Blue radial glow bg */}
       <div
         className="absolute inset-0"
         style={{
@@ -22,10 +21,26 @@ function Home() {
         <h3>playing with emoji editor</h3>
       </div>
 
-      <div className="emoji-box"
-        style={{ backgroundColor: bgColor }}
+      <div
+        className="emoji-box"
+        style={{
+          fontSize: `${slidervalue}px`,
+        }}
       >
         {emoji}
+      </div>
+
+      <div className="slider-container">
+        {slidervalue}
+        <input
+          type="range"
+          min="0"
+          max="100"
+          className="slider"
+          onChange={(e) => {
+            setSlidervalue(e.target.value);
+          }}
+        />
       </div>
 
       <div className="emoji-pick">
