@@ -1,79 +1,126 @@
+
 .head {
   text-align: center;
-  font-size: 2rem;
-  color: #6699ff;
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 30px;
+  color: #2b1a4a;
 }
 
-.min-h-screen {
-  min-height: 100vh;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.relative {
-  position: relative;
-}
-
-.absolute {
-  position: absolute;
-}
-
-.inset-0 {
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.z-0 {
-  z-index: 0;
-}
 .desc {
   text-align: center;
-  font-size: 1.5rem;
-  margin-top: 20px;
+  font-size: 16px;
+  color: #5a4a7a;
+  margin-bottom: 20px;
 }
-.emoj-box {
-  background:white;
-  width: 160px;
-  height: 160px;
+
+.emoji-box {
+  width: 220px;
+  height: 220px;
+  margin: 20px auto;
+  border-radius: 22px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  border-radius: 20px;
-  border:1px solid blue;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  
+  justify-content: center;
+  font-size: 60px;
+  line-height: 1;
+  user-select: none;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
 }
-.emoj-box:hover{
-  box-shadow: 0 8px 12px rgba(26, 24, 24, 0.2);
+.control-section {
+  max-width: 200px;
+  margin: 10px auto;
+  padding: 0;              
+  background: none;        
+  backdrop-filter: none;   
+  border-radius: 0;        
+  box-shadow: none;        
 }
+
+
+.control-section h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a225c;
+  text-align: center;
+}
+
+.slider {
+  width: 100%;
+  height: 6px;
+  background: #ccc;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  background: #555;
+  border-radius: 50%;
+}
+.slider::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: #555;
+  border-radius: 50%;
+}
+
 .emoji-pic {
-  width: fit-content;
-  border: 1px solid blue;
-  margin: 50px auto;
-  padding: 10px 5px;
-  border-radius: 10px;
+  max-width: 520px;
+  margin: 30px auto;
+  padding: 14px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+    border: 1px solid blue;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.emoji-pic button {
+  font-size: 22px;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.7);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.emoji-pic button:hover {
+  transform: scale(1.15);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
 }
 .color-picker {
-  margin-top: 40px;
-  width: 34%;
-  border: 1px solid blue;
-  margin: 50px auto;
-  padding: 10px 5px;
-  border-radius: 10px;
+   max-width: 520px;
+  margin: 30px auto;
+  padding: 14px;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+   border: 1px solid blue;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.45);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
 }
-.slider-container {
-  display: flex;
-  justify-content: center;
+
+.color-picker button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-picker button:hover {
+  transform: scale(1.2);
 }
