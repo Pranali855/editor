@@ -1,18 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./assets/Home";
-import About from "./assets/About";
-import Contact from "./assets/Contact";
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import Home from './Home.jsx'
+import Contact from './Contact.jsx'
+import About from './About.jsx'
 
-function App() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-    </Router>
-  );
+const root = createRoot(document.getElementById('root'));
+const path = window.location.pathname;
+console.log(path);
+
+if(path === "/"){
+    root.render(<Home />);
+} else if (path == "/About"){
+    root.render(<About />);
+} else if (path == "/Contact"){
+    root.render(<Contact />);
+} else {
+    root.render(<h1>Error</h1>);
 }
-
-export default App;
